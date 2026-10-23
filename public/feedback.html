@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Feedback | Student Feedback</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="container topbar-inner">
+            <a class="brand" href="/">Student Feedback</a>
+            <a class="btn-link" href="/">+ Give Feedback</a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="page-head">
+            <h1>All Feedback</h1>
+            <p>See what students are saying about the program.</p>
+        </div>
+
+        <section class="stats" aria-label="Summary">
+            <div class="stat">
+                <span class="stat-value" id="statTotal">0</span>
+                <span class="stat-label">Total Responses</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="statAvg">0.0</span>
+                <span class="stat-label">Average Rating</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="statTop">0</span>
+                <span class="stat-label">5-Star Reviews</span>
+            </div>
+        </section>
+
+        <section class="toolbar">
+            <input type="search" id="searchInput" placeholder="Search by name or comment...">
+            <select id="ratingFilter" aria-label="Filter by rating">
+                <option value="all">All ratings</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Average</option>
+                <option value="1">1 - Poor</option>
+            </select>
+        </section>
+
+        <div id="feedbackList" class="grid"></div>
+        <div id="state" class="state"></div>
+
+    </main>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
